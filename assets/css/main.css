@@ -5768,6 +5768,9 @@ select option:checked {
     .call-us {
         display: none !important;
     }
+    .info-call {
+        display: none !important;
+    }
     .mobile-button {
         display: block
     }
