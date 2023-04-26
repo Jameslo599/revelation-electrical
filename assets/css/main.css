@@ -5228,7 +5228,7 @@ input, select, textarea {
 			#banner button:focus,
 			#banner .button:hover,
 			#banner .button:focus {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: rgba(255, 255, 255, 0.33);
 			}
 
 			#banner input[type="submit"]:active,
@@ -5428,6 +5428,10 @@ input, select, textarea {
 			}
 
 				#footer .contact-icons li:before, div.contact-icons span:before, ul.contact-icons a:before {
+                    -moz-transition: all 0.2s ease-in-out;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
 					background-color: #fff;
 					border-radius: 100%;
 					color: #555;
@@ -5437,6 +5441,11 @@ input, select, textarea {
 					line-height: 2.5rem;
 					width: 2.5rem;
 				}
+
+                ul.contact-icons a:hover:before {
+                    color: #ffffff;
+                    background-color: #8e8e8e;
+                }
 
 				#footer .contact-icons li:first-child {
 					margin-left: 0;
