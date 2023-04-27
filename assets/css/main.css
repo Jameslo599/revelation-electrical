@@ -5686,6 +5686,17 @@ form {
 #header{
     height:fit-content
 }
+#header.alt #mainLogo {
+    visibility: hidden;
+    opacity: 0;
+}
+#mainLogo {
+    -moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+	-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+	-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+	transition: opacity 0.2s ease-in-out, visibility 0.2s;
+    visibility: visible;
+}
 header img{
     width: 100px;
     vertical-align: middle;
@@ -5705,6 +5716,14 @@ header img{
 }
 .info-call:hover {
     background-color: #e3e3e3;
+}
+.logoHolder {
+    background-color: #292c7660;
+    border: 2px solid #33357a;
+    border-radius: 100%;
+}
+.landingLogo {
+    width: 80%;
 }
 
 /* Menu */
@@ -5785,6 +5804,10 @@ select option:checked {
     }
     #header nav ul li a[href="#menu"]:before {
         font-size: 1.5rem;
+    }
+
+    .spotlight h3 {
+        display: none;
     }
 }
 @media screen and (max-width: 480px) {
