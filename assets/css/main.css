@@ -4572,7 +4572,11 @@ input, select, textarea {
 			-ms-transition: opacity 0.5s ease-out, -ms-transform 0.5s ease-out;
 			transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 			margin-bottom: 0;
+            font-weight: normal;
 		}
+        .spotlight h3 {
+            font-weight: normal;
+        }
 
 		.spotlight .image {
 			border-radius: 0;
@@ -5323,7 +5327,7 @@ input, select, textarea {
 				background-color: #ffffff;
 				display: block;
 				height: 3px;
-				margin: 2rem auto;
+				margin: 0 auto 2rem auto;
 				width: 4rem;
 			}
 
@@ -5682,6 +5686,12 @@ form {
 	}
 
 /* Custom Code */
+.major h2 {
+    font-weight: bold;
+}
+.content h3 {
+    font-weight: normal;
+}
 /* Landing */
 #header{
     height:fit-content
@@ -5717,14 +5727,6 @@ header img{
 .info-call:hover {
     background-color: #e3e3e3;
 }
-.logoHolder {
-    background-color: #292c7660;
-    border: 2px solid #33357a;
-    border-radius: 100%;
-}
-.landingLogo {
-    width: 80%;
-}
 
 /* Menu */
 .links > li > a:hover{
@@ -5746,7 +5748,7 @@ header img{
     width: calc(100% - 6rem);
 }
 #contact h2 {
-    color: #000;
+    color: #1a1a1a;
 }
 #contact label {
     margin-bottom: 0.5rem;
@@ -5773,6 +5775,13 @@ select option:checked {
 #submit:hover {
     background-color: #292B76;
 }
+.split {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Footer */
 .contact-icons a {
     text-decoration: none;
     border-bottom: 1px dotted #000;
@@ -5782,10 +5791,56 @@ select option:checked {
 .contact-icons a:hover {
     color: #000000;
 }
-.split {
+#footer .payment li {
+    margin-left: 0 !important;
+}
+#footer h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#footer h4::after {
+    content: '';
+    background-color: #ffffffba;
+    display: block;
+    height: 2px;
+    margin: 1rem auto 0;
+    width: 7rem;
+}
+#footer .preferred {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.offset {
+    padding-left: 0 !important;
+}
+.accepted {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.accepted span{
+    color: #BBB;
+    font-size: 0.75rem;
+}
+.accepted li:first-child {
+    width: 100%;
+}
+.copyright a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dotted currentColor;
+}
+.copyright a:hover {
+    color: #fff;
+}
+.copyright span{
+    border-bottom: 1px dotted currentColor;
 }
 
 @media screen and (min-width: 980px) {
