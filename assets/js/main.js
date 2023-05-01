@@ -17,7 +17,6 @@
 		};
 
 	/**
-	 * Custom carousel for Altitude.
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn._carousel = function(options) {
