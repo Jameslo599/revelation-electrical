@@ -68,7 +68,7 @@
                     <header class="major">
                         <h2>Contact Us</h2>
                     </header>
-                    <form method="post" action="#" data-netlify="true">
+                    <form method="post" action="#" data-netlify="true" data-netlify-recaptcha="true">
                         <div class="fields">
                             <div class="field half">
                                 <label for="name">Name</label>
@@ -101,6 +101,7 @@
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message" rows="4" placeholder="Project Description" required></textarea>
                             </div>
+                            <div class="field" data-netlify-recaptcha="true"></div>
                         </div>
                         <ul class="actions">
                             <li><input type="submit" value="Send Message" class="primary" id="submit" /></li>
