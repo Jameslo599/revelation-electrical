@@ -4,6 +4,7 @@
 		$body = $('body'),
 		$header = $('#header'),
 		$banner = $('#banner'),
+        $topBar = $('#topBar'),
 		settings = {
 
 			carousel: {
@@ -180,6 +181,19 @@
 			});
 
 	// Header.
+		if ($topBar.length > 0 && $header.hasClass('relative')) {
+
+				$window.on('resize', function() { $window.trigger('scroll'); });
+
+				$topBar.scrollex({
+						top:         $header.outerHeight(),
+						terminate:      function() { $header.removeClass('relative'); },
+						enter:          function() { $header.addClass('relative'); },
+						leave:          function() { $header.removeClass('relative'); }
+				});
+
+		}
+
 		if ($banner.length > 0 && $header.hasClass('alt')) {
 
 				$window.on('resize', function() { $window.trigger('scroll'); });
