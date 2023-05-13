@@ -139,7 +139,7 @@ input, select, textarea {
 
 	body {
 		background-color: #ffffff;
-		color: #888;
+		color: #2e2e2e;
 	}
 
 	body, input, select, textarea {
@@ -5597,6 +5597,11 @@ input, select, textarea {
 
     @media screen and (max-width: 736px) {
 
+        .topMargin {
+            margin-top: 1em;
+            font-weight: normal;
+        }
+
         #contact > .inner > :nth-child(2n - 1) {
             padding: 3em 0 1em 0 ;
         }
@@ -5687,6 +5692,12 @@ form {
 	}
 
 /* Custom Code */
+.content p, .info, .info h5 {
+    color: #000;
+}
+.info h5 {
+    font: inherit;
+}
 #topBar {
     background-image: linear-gradient(120deg, #4283ec 0%, #667d87 100%);
     height: 4rem;
