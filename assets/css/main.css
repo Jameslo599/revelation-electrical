@@ -5692,10 +5692,10 @@ form {
 	}
 
 /* Custom Code */
-.content p, .info, .info h4 {
+.content p, .info, .info h3 {
     color: #000;
 }
-.info h4 {
+.info h3 {
     font: inherit;
 }
 #topBar {
