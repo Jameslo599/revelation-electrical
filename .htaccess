@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(&#91;^/]+)/$ $1.html
+RewriteRule ^(&#91;^/]+)/(&#91;^/]+)/$ /$1/$2.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.&#91;a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ &#91;R=301,L]
