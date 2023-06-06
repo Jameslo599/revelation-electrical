@@ -2015,7 +2015,7 @@ input, select, textarea {
 		input[type="button"].primary.accent3,
 		button.primary.accent3,
 		.button.primary.accent3 {
-			background-color: #5eb6df !important;
+			background-color: #1c7299  !important;
 			color: #ffffff !important;
 		}
 
@@ -2028,7 +2028,7 @@ input, select, textarea {
 			button.primary.accent3:focus,
 			.button.primary.accent3:hover,
 			.button.primary.accent3:focus {
-				background-color: #016c9f !important;
+				background-color: #3a98c3 !important;
 			}
 
 			input[type="submit"].primary.accent3:active,
@@ -2325,7 +2325,7 @@ input, select, textarea {
 	input[type="email"].accent3:focus,
 	select.accent3:focus,
 	textarea.accent3:focus {
-		border-color: #5eb6df !important;
+		border-color: #1c7299  !important;
 	}
 
 	input[type="text"].accent4:focus,
@@ -3957,7 +3957,7 @@ input, select, textarea {
 				.wrapper.style3 textarea.alt {
 					background-color: #ffffff;
 					border-color: #ffffff;
-					color: #5eb6df;
+					color: #1c7299 ;
 				}
 
 					.wrapper.style3 input[type="text"].alt:focus,
